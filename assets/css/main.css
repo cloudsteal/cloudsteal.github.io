@@ -2702,4 +2702,10 @@ input, select, textarea {
 					border-left: 0;
 				}
 
+/* New Stuff */
+
+		#logo {
+			width: 80%;
+		}
+		
 	}
