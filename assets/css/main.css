@@ -7,6 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* New Stuff */
+
+		#logo {
+			 	width: auto !important;
+  				height: auto !important;
+  				max-width: 100%;
+		}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2702,12 +2710,5 @@ input, select, textarea {
 					border-left: 0;
 				}
 
-/* New Stuff */
-
-		#logo {
-			 	width: auto !important;
-  				height: auto !important;
-  				max-width: 100%;
-		}
 		
 	}
