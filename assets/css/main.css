@@ -2704,8 +2704,10 @@ input, select, textarea {
 
 /* New Stuff */
 
-		#logo .img {
-			width: 80%;
+		#logo {
+			 	width: auto !important;
+  				height: auto !important;
+  				max-width: 100%;
 		}
 		
 	}
