@@ -1948,7 +1948,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		position: absolute;
+		position: sticky;
 		top: 3em;
 		left: 0;
 		width: 100%;
