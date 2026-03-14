@@ -65,7 +65,7 @@
 	// Scroll fade-in with Scrollex
 	$(function() {
 		$('.onscroll-fade-in').scrollex({
-			mode: 'middle',
+			mode: 'top',
 			enter: function() {
 				$(this).addClass('visible');
 			}
