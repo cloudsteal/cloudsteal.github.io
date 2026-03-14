@@ -1968,7 +1968,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		position: relative;
+		position: fixed;
 		top: 3em;
 		left: 0;
 		width: 100%;
