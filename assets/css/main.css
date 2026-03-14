@@ -18,8 +18,8 @@
 
 /* visible state */
 .onscroll-fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 /* Attempting hovering Nav bar */
