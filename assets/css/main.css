@@ -1930,7 +1930,6 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		position: relative;
 		background: #fff;
 		text-align: center;
 	}
@@ -1967,7 +1966,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		position: absolute;
+		position: relative;
 		top: 3em;
 		left: 0;
 		width: 100%;
