@@ -2138,7 +2138,7 @@ input, select, textarea {
 
 	#features {
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		background: #fff;
 		text-align: center;
 		padding: 6em 0;
@@ -2156,7 +2156,7 @@ input, select, textarea {
 
 	#banner {
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		background: #fff;
 		color: #fff;
 		text-align: center;
@@ -2215,7 +2215,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		background: #fff;
 		padding: 6em 0;
 	}
@@ -2260,7 +2260,7 @@ input, select, textarea {
 
 	#footer {
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		border-top: solid 2px #e5e5e5;
 		background: #f0f0f0;
 		padding: 6em 0 8em 0;
