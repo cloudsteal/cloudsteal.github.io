@@ -4,11 +4,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body');
-
+		$body = $('body');	
+	
+	//Adding Scrolling Watch for Fading - New 3.14
+		$('.onscroll-fade-in').scrollex({
+    		mode: 'middle',
+   			delay: 100,
+   			enter: function() {
+   		    	$(this).addClass('visible');
+    			}
+		});
+	
 	// Breakpoints.
 		breakpoints({
 			xlarge:  [ '1281px',  '1680px' ],
