@@ -7,14 +7,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* Test CSS for keeping a nav bar on top */
+#nav2 {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 100%;
+
+    background: white;        /* background color of the box */
+    padding: 1em 0;           /* space inside the box */
+    border: 2px solid #ccc;   /* border around the nav */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* optional subtle shadow */
+
+    z-index: 1000;  
+}
+
 /* Keeping logo correctly sized for mobile */
 
 
-		#logo {
+#logo {
   width: auto;
   height: auto;
   max-width: 100%;
-		}
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
