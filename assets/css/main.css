@@ -41,7 +41,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, nav, nav2, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -51,7 +51,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, nav2, section {
 	display: block;}
 
 body {
@@ -1962,9 +1962,82 @@ input, select, textarea {
 			text-align: center;
 		}
 
+/* Nav2 */
+
+	#nav2 {
+		position: absolute;
+		top: 3em;
+		left: 0;
+		width: 100%;
+		cursor: default;
+	}
+
+		#nav2 > ul > li {
+			display: inline-block;
+			padding-right: 2em;
+		}
+
+			#nav2 > ul > li:last-child {
+				padding-right: 0;
+			}
+
+			#nav2 > ul > li > a {
+				border: 0;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 400;
+				color: #777;
+				outline: 0;
+				display: block;
+			}
+
+				#nav2 > ul > li > a:before {
+					display: inline-block;
+					background: #878787;
+					color: #e4e4e4;
+					width: 2.25em;
+					font-size: 0.8em;
+					height: 2.25em;
+					border-radius: 2.25em;
+					line-height: 2.1em;
+					text-align: center;
+					box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+					margin-right: 0.75em;
+					-moz-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+					-webkit-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+					-o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+					-ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+					transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+				}
+
+				#nav2 > ul > li > a > span {
+					-moz-transition: color 0.25s ease-in-out;
+					-webkit-transition: color 0.25s ease-in-out;
+					-o-transition: color 0.25s ease-in-out;
+					-ms-transition: color 0.25s ease-in-out;
+					transition: color 0.25s ease-in-out;
+					font-size: 0.85em;
+					letter-spacing: 3px;
+				}
+
+			#nav2 > ul > li > ul {
+				display: none;
+			}
+
+			#nav2 > ul > li.active > a:before,
+			#nav2 > ul > li:hover > a:before {
+				background: #ED786A;
+				color: #fff;
+			}
+
+			#nav2 > ul > li.active > a > span,
+			#nav2 > ul > li:hover > a > span {
+				color: #ED786A;
+			}
+
 /* Nav */
 
-	#nav {
+	#nav, {
 		position: absolute;
 		top: 3em;
 		left: 0;
@@ -2312,6 +2385,12 @@ input, select, textarea {
 		/* Nav */
 
 			#nav > ul > li {
+				padding-right: 1.25em;
+			}
+
+			/* Nav2 */
+
+			#nav2 > ul > li {
 				padding-right: 1.25em;
 			}
 
