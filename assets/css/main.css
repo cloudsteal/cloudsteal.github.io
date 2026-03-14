@@ -10,7 +10,7 @@
 /* Attempting hovering Nav bar */
 
 #nav {
- position: fixed;
+ position: relative;
     top: 3em;
     left: 0;
     width: 100%;
