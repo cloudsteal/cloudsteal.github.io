@@ -62,14 +62,4 @@
 					visibleClass: 'navPanel-visible'
 				});
 
-		$(document).ready(function() {
-  			$('.onscroll-fade-in').scrollex({
-  				  mode: 'middle',
-					delay: 0,
-    				enter: function() {
-      					$(this).addClass('visible');
-    					}
-  				});
-		});
-
 })(jQuery);
