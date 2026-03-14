@@ -9,6 +9,20 @@
 
 /* Attempting hovering Nav bar */
 
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav > ul > li > a {
+    padding: 0;
+    line-height: 2.25em;
+}
+
+#nav {
+    padding: 0;
+}
+
 #nav {
  position: relative;
     top: 1em;
