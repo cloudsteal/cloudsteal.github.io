@@ -7,6 +7,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Slideshow Logo Mechanics */
+.logo-fade .top {
+  animation: crossfade 6s infinite;
+}
+
+.logo-fade .bottom {
+  animation: crossfade 6s infinite reverse;
+}
+
+@keyframes crossfade {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
 
 /* Fade In Mechanics */
 /* hidden state */
