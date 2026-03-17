@@ -15,7 +15,7 @@
   aspect-ratio: 9 / 5;    /* keeps container 9:5 */
   margin: 0 auto;
   overflow: hidden;
-  background: #000;       /* optional, looks nice during transitions */
+  background: #fff;       /* optional, looks nice during transitions */
 }
 
 .logo-crossfade .fade-img {
@@ -32,6 +32,7 @@
 /* Logo keeps its original aspect ratio */
 .logo-crossfade .fade-img.logo {
   object-fit: contain;
+object-position: top center;
   animation-delay: 0s;
 }
 
