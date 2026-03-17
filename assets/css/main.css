@@ -29,6 +29,17 @@
   animation: crossfade 36s infinite; /* slower fade */
 }
 
+/* Logo keeps its original aspect ratio */
+.logo-crossfade .fade-img.logo {
+  object-fit: contain;
+  animation-delay: 0s;
+}
+
+/* Other images fill the container */
+.logo-crossfade .fade-img.fill {
+  object-fit: cover;
+}
+
 /* stagger the images */
 .logo-crossfade .fade-img.logo { animation-delay: 0s; }
 .logo-crossfade .fade-img:nth-child(2) { animation-delay: 6s; }
