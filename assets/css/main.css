@@ -32,12 +32,14 @@
 /* Logo keeps its original aspect ratio */
 .logo-crossfade .fade-img.logo {
   object-fit: contain;
-  animation-delay: 0s;
+  opacity: 1;       /* show immediately */
+  animation: none;  /* no animation for the logo */
+  z-index: 10;      /* keep on top initially */
 }
 
 /* Other images fill the container */
 .logo-crossfade .fade-img.fill {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* stagger the images */
