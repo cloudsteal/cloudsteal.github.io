@@ -10,21 +10,18 @@
 /* Slideshow Logo Mechanics */
 .logo-crossfade {
   position: relative;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  max-width: 900px;       /* adjust size */
+  aspect-ratio: attr(data-aspect); /* fallback below */
+  margin: 0 auto;
   overflow: hidden;
 }
 
-.logo-crossfade .fade-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* keeps logo centered and fully visible */
-  opacity: 0;
-  animation: crossfade 30s infinite;
+/* Fallback for browsers without attr(aspect-ratio) support */
+.logo-crossfade::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* square by default */
 }
 /* Offset each image in the animation */
 .logo-crossfade .fade-img:nth-child(1) { animation-delay: 0s; }
