@@ -39,7 +39,7 @@
 
 /* Other images fill the container */
 .logo-crossfade .fade-img.fill {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* stagger the images */
