@@ -62,14 +62,25 @@
 		visibleClass: 'navPanel-visible'
 	});
 
-	// Scroll fade-in with Scrollex
-	$(function() {
-		$('.onscroll-fade-in').scrollex({
-			mode: 'top',
-			enter: function() {
-				$(this).addClass('visible');
-			}
-		});
-	});
-
 })(jQuery);
+
+/* =========================
+   Modern Scroll Fade-In
+   ========================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // fade in once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.onscroll-fade-in').forEach(el => {
+    observer.observe(el);
+  });
+});
